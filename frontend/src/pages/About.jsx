@@ -1,0 +1,112 @@
+import React from 'react'
+import Header from '../components/Header'
+import Vid from '../assets/images/vid1.mp4'
+
+const About = () => {
+  return (
+     <div className="container">
+      <Header/>
+      <section className="about-banner">
+        <h1>About Us</h1>
+        <div className="about-wrapper">
+        <div className="banner">
+          <div className="banner-video">
+             <video autoplay={true} muted plays-inline="true" className="back-video" width={400}>
+              <source src={Vid} type="video/mp4"></source> 
+            </video>
+          </div>
+          <div className="banner-content">
+            <h1>Always At Your Service At Your Time of Need</h1>
+            <h2>EVELASTING FUNERALS</h2>
+            <p>Everlasting Funerals is providing affordable and professional funeral services to families in need. We have provided beautiful funerals to
+            families for over 40 years. We pride ourselves on being upfront with our prices and having no hidden costs. We service all areas of Gauteng, Mpumalanga, North West & Polokwane. We're available 24 hours a day, 7 days a week, and are always there when you need us.</p>
+          </div>
+        </div>
+    </div>
+      </section>
+       <section className="banner-blue">
+        <div className="banner-wrapper">
+          <div className="wrapper-icon">
+            <span className="fas fa-briefcase"></span>
+            <h2>2015</h2>
+            <p>Since</p>
+          </div>
+          <div className="wrapper-icon">
+            <span className="fas fa-users"></span>
+            <h2>2000</h2>
+            <p>Satisfied Clients</p>
+          </div>
+          <div className="wrapper-icon">
+            <span className="fas fa-car"></span>
+            <h2>70</h2>
+            <p>Fleet Size</p>
+          </div>
+          <div className="wrapper-icon">
+            <span className="fas fa-user"></span>
+            <h2>84</h2>
+            <p>Team Members</p>
+          </div>
+        </div>
+      </section>
+      <section className="footer">
+        <div className="footer-top">
+          <div className="box-left footer-box">
+            <h2>Quick Links</h2>
+            <ul>
+              <li><a href="/">HOME</a></li>
+					    <li><a href="About">ABOUT</a></li>
+					    <li><a href="funeral_policies">FUNERAL PLANS</a></li>
+					    <li><a href="Gallery">GALLERY</a></li>
+					    <li><a href="contact">CONTACT</a></li>
+            </ul>
+          </div>
+          <div className="box-center footer-box">
+            <h2>Business Hours</h2>
+            <ul>
+              <li>Mon 08:00 - 16:30</li>
+              <li>Tue 08:00 - 16:30</li>
+              <li>Wed 08:00 - 16:30</li>
+              <li>Thu 08 :00 - 16:30</li>
+              <li>Fri 08:00 - 16:30</li>
+              <li>Sat 08:00 - 13:00</li>
+              <li>Sun Closed</li>
+            </ul>
+          </div>
+          <div className="box-right footer-box">
+            <h2>Contact Us</h2>
+            <div className="contact-us">
+              <ul>
+                <li>
+                  <span className="fas fa-map-marker"></span>
+                  <p>APIESDORING DRIVE HEUWELROOD, 16, CENTURION, GAUTENG, 0157</p>
+                </li>
+                   <li>
+                  <span className="fas fa-phone"></span>
+                  <p>+27 67 991 0269</p>
+                </li>
+                <li>
+                  <span className="fas fa-envelope"></span>
+                  <p>Info@EverlastingFunerals.co.za</p>
+                </li>
+              </ul>
+              <div className="socials">
+                <ul>
+                  <li><i className="fab fa-tiktok"></i></li>
+                  <li><i className="fab fa-facebook"></i><a href="https://www.facebook.com"></a></li>
+                  <li><i className="fab fa-instagram"></i></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="footer-bottom">
+          <div className="footer-wrapper">
+            <p>Copyright &copy; 2025 | All rights reserved | Created by ViolTechSolutions</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  )
+}
+
+export default About
